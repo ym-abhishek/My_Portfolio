@@ -1,0 +1,91 @@
+/* src/Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #1b1b1b;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-family: "Libre Caslon Text", serif;
+    color: #fff;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-box li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.nav-box .nav-links {
+    text-decoration: none;
+    color: #898989;
+}
+
+.nav-box .nav-links:hover {
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .nav-box {
+        display: none;
+        flex-direction: column;
+        width: 30%;
+        background-color: #1b1b1b;
+        text-align: center;
+        top: 60px;
+        right: 0;
+        position: absolute;
+    }
+
+    .nav-box.active {
+        display: flex;
+    }
+
+    .nav-box li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .nav-box li {
+        font-size: 16px;
+    }
+}

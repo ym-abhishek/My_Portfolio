@@ -1,0 +1,131 @@
+.contact-con {
+    height: 93.3vh;
+    width: 100vw;
+    background-color: #080808;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-con .contact-form {
+    border: 1px solid #40A578;
+    width: 30vw;
+    margin-top: 30px;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.contact-con .contact-form h1 {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+.contact-con .contact-form form input,
+.contact-con .contact-form form textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #fff;
+    color: #080808;
+}
+
+.contact-con .contact-form form textarea {
+    resize: none;
+}
+
+.contact-con .contact-form button {
+    height: 40px;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #40A578;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-con .contact-form button:hover {
+    background-color: #fff;
+    color: #40A578;
+}
+
+.contact-con .contact-form .foot_icons {
+    padding: 5px;
+    margin: 5px;
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    border-top: solid 0.5px gray;
+    text-align: center;
+}
+
+.contact-con .contact-form .foot_icons i {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-con .contact-form .foot_icons i:hover {
+    background-color: #40A578;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .contact-con .contact-form {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-con .contact-form {
+        width: 50vw;
+    }
+
+    .contact-con .contact-form button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-con .contact-form {
+        width: 60vw;
+        padding: 20px;
+    }
+
+    .contact-con .contact-form button {
+        font-size: 16px;
+    }
+
+    .contact-con .contact-form form input,
+    .contact-con .contact-form form textarea {
+        width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-con .contact-form {
+        width: 80vw;
+        padding: 15px;
+    }
+
+    .contact-con .contact-form h1 {
+        font-size: 24px;
+    }
+
+    .contact-con .contact-form button {
+        font-size: 14px;
+        height: auto;
+        padding: 10px;
+    }
+}

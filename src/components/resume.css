@@ -1,0 +1,28 @@
+.res-wrapper {
+    background-color: #080808;
+    color: #fff;
+    padding-left: 200px;
+}
+
+.res-wrapper iframe {
+    width: 85%;
+    height: 975px;
+}
+
+@media (max-width: 1200px) {
+    .res-wrapper {
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .res-wrapper {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .res-wrapper {
+        padding-left: 50px;
+    }
+}
